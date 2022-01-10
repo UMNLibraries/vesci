@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "vesci"
+version = "0.0.0"
+description = "Virtual environment-source control integration for Python"
+readme = "README.md"
+authors = ["David Naughton <naughton@umn.edu>"]
+license = "MIT"
+
+[tool.poetry.scripts]
+ve = 'vesci.vesci:cli'
+hello = 'vesci.hello:hello'
+
+[tool.poetry.dependencies]
+python = "^3.7.2"
+addict = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+python_dotenv = "*"
